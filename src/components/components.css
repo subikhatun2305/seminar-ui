@@ -1,0 +1,15 @@
+.date-picker-standard .form-control {
+    border: none;
+    border-bottom: 1px solid #ced4da;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.date-picker-standard .form-control:focus {
+    border-bottom: 2px solid #80bdff;
+    box-shadow: none;
+}
+
+.date-picker-standard .react-datepicker-wrapper {
+    width: 100%;
+}

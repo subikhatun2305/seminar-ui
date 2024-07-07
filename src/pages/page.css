@@ -1,0 +1,5 @@
+.custom-tabs .MuiTab-label {
+    font-size: 4px; /* Adjust the font size here */
+    color:"red";
+    height: "100px";
+}

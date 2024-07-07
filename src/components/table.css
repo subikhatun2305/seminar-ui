@@ -1,0 +1,101 @@
+.table-container {
+    max-width: 1100px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 40px; */
+}
+
+.table-wrapper {
+    overflow-y: auto;
+    overflow-x: auto;
+    max-height: 400px;
+    /* Adjust as needed */
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th,
+.table td {
+    padding: 4px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    white-space: nowrap;
+    font-size: 0.7em;
+    height: 40px;
+    /* Set a fixed height for header and cells */
+}
+
+/* Style for table header */
+.table th {
+    background-color: #0075a8;
+    /* Set background color */
+    color: white;
+    /* Set text color */
+}
+
+/* Style for table footer (pagination) */
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px 0;
+    font-size: 0.9em;
+    height: 40px;
+    /* Match the height of the table header */
+    background-color: #0075a8;
+    /* Set background color */
+    color: white;
+    /* Set text color */
+}
+
+.pagination-btn {
+    margin: 0 5px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-size: 1em;
+    color: white;
+    /* Set text color */
+    transition: color 0.3s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    color: #f0f0f0;
+    /* Lighter color on hover */
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+}
+
+.pagination-select {
+    margin-left: 10px;
+    padding: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.pagination-select:hover {
+    border-color: #0075a8;
+    /* Highlight border color on hover */
+}
+
+.pagination-select:focus {
+    border-color: #0075a8;
+    /* Highlight border color on focus */
+    box-shadow: 0 0 0 2px rgba(0, 117, 168, 0.25);
+    /* Add a subtle box shadow on focus */
+}
